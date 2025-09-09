@@ -1,0 +1,132 @@
+* {
+margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+body {
+  background-color: hsl(217, 54%, 11%);
+  max-width: 100%;
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  font-family: "Outfit", sans-serif;
+  background-color: hsl(216, 50%, 16%);
+  max-width: 300px;
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 15px;
+  gap: 10px;
+  box-shadow: 0px 0px 20px hsl(215, 92%, 10%);
+}
+.Equilibrium-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 5px;
+}
+.title {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 5px;
+}
+.paragraph {
+  color: hsl(215, 51%, 70%);
+  font-size: 1rem;
+}
+.title, .paragraph {
+  margin-bottom: 15px;
+}
+.blue-green {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.green {
+  display: flex;
+  color: hsl(178, 100%, 50%);
+  gap: 5px;
+  font-size: 13px;
+  font-weight: bold;
+}
+.green img {
+  margin-top: 2px;
+  width: 8px;
+}
+
+.blue {
+  display: flex;
+  color: hsl(215, 51%, 70%);
+  gap: 5px;
+  font-size: 13px;
+}
+.blue img {
+  width: 13px;
+  margin-top: 2px;
+}
+
+.author{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.author img {
+  width: 30px;
+}
+.author-data {
+  color: hsl(215, 51%, 70%);
+}
+.name {
+  color: white;
+  margin-left: 3px;
+}
+
+.img-container {
+  position: relative;
+}
+
+.eye-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 255, 247, 0.5);
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0; /* default hidden */
+  transition: opacity 0.3s ease;
+}
+
+hr {
+  border: 1px solid hsl(215, 32%, 27%);
+}
+
+.title:hover, .name:hover {
+  color: hsl(178, 100%, 50%);
+  transition: 0.5s;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.eye-icon:hover {
+  opacity: 1;
+}
+
+
